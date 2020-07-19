@@ -1,3 +1,5 @@
+import { curry } from "ramda";
+
 /**
  * Write a function that takes an array of employees and returns the sum of
  * their salaries. Use Array.prototype.reduce.
@@ -21,4 +23,5 @@
  * ```
  */
 export function getTotalSalary (employees) {
+    return employees.reduce((sum, curr)=>sum + curr.salary, 0);
 }
