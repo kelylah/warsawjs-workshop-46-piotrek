@@ -1,7 +1,8 @@
 1. Funkcje wyższego rzędu to funkcje, które jako argument przyjmują inną funkcję.
 2. Jest strona JSperf która pomaga w sprawdzaniu wydajności JSa
 3. Ramda - biblioteka do programowania point-free
-4. Pobieranie pliku z innego brancha:
+4. Kombinatery parserów - walidacja
+5. Pobieranie pliku z innego brancha:
 git checkout origin/solutions -- src/3-data-validation/3-misc.js
 wiecej info:
 https://stackoverflow.com/a/4427783/9259091
