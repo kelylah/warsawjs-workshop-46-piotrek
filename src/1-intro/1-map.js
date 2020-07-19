@@ -18,4 +18,5 @@
  * ```
  */
 export function getSentences (employees) {
+    return employees.map(emp => `${emp.firstName} ${emp.lastName} earns ${emp.salary} dollars.`);
 }
