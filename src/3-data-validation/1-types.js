@@ -10,4 +10,5 @@
  * isA(Array)(1) // false
  * ```
  */
-export const isA = null
+export const isA = aType => v => typeof aType === 'string' ? typeof v === aType : v instanceof aType;
+}
