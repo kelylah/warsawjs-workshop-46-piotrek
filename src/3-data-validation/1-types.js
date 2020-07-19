@@ -11,4 +11,4 @@
  * ```
  */
 export const isA = aType => v => typeof aType === 'string' ? typeof v === aType : v instanceof aType;
-}
+
