@@ -1,0 +1,2 @@
+1. Funkcje wyższego rzędu to funkcje, które jako argument przyjmują inną funkcję.
+2. Jest strona JSperf
