@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import { isA } from '../../src/3-data-validation/1-types'
 import { isArrayOf, isAnyOf, isExactly } from '../../src/3-data-validation/3-misc'
 
-describe.skip('3 - (data-validation) misc - isArrayOf', () => {
+describe('3 - (data-validation) misc - isArrayOf', () => {
   it('always fails for non-arrays', () => {
     expect(isArrayOf(isA('string'))(42)).to.equal(false)
   })

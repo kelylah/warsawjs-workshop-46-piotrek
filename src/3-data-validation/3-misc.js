@@ -21,8 +21,11 @@ is4(4) // true
 is4(3) // false
 */
 
-export const isArrayOf = null
-
+export const isArrayOf = validator => arr => 
+    Array.isArray(arr) && 
+    arr.every(el => validator(el));
+    // arr.reduce((prev, curr)=> prev && validator(curr), true);
+    
 export const isAnyOf = null
 
 export const isExactly = null
