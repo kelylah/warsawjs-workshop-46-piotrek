@@ -1,3 +1,4 @@
+import isA from './1-types';
 /**
  * Write a function that returns a function that checks if the argument matches
  * the provided schema
@@ -21,4 +22,12 @@
  * }) // true
  * ```
  */
-export const isObjectOf = null
+export const isObjectOf = schema => value =>
+    typeof value === 'object' && value !== null &&
+    Object.keys(schema).every(key => schema[key](value[key]));
+
+/*
+* W tym przykladzie mamy tak jakby 2 obiekty. Pierwszym jest schema ==> schema[key],
+* a drugim sam sprawdzany obiekt ==> value[key] i na nim robimy tą funkcję, która jest pod schema[key]
+* Czyli value[key] jest argumentem ze schema[key]
+*/
