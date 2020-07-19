@@ -21,4 +21,11 @@
  * ]
  * ```
  */
-export const getShortNamedAnimals = null
+ 
+const prop = property => x => x[property];
+const filter = fn => array => array.filter(fn);
+const pipe = (...fs) => x => fs.reduce((x,f) => f(x), x);
+
+const shorterThan = value => elem => elem < value;
+
+export const getShortNamedAnimals = filter(pipe(prop('name'), prop('length'), shorterThan(5)));
